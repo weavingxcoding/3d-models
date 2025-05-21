@@ -16,7 +16,7 @@
     <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
 
-    <link type="text/css" rel="stylesheet" href="/shared/styles.css">
+    <link type="text/css" rel="stylesheet" href="./shared/styles.css">
 </head>
 <body>
         <model-viewer 
@@ -26,7 +26,7 @@
             src="model.glb" 
             ios-src="model.usdz" 
             ar ar-modes="scene-viewer quick-look webxr" 
-            camera-controls environment-image="/shared/envs/looms.hdr" 
+            camera-controls environment-image="./shared/envs/looms.hdr" 
             poster="sample.webp" 
             shadow-intensity="1">
 
@@ -37,9 +37,9 @@
             View in your space
         </button>
         <div id="ar-prompt">
-            <img src="/shared/images/ar_hand_prompt.png">
+            <img src="./shared/images/ar_hand_prompt.png">
         </div>
     </model-viewer>
-    <script src="/shared/scripts.js"></script>
+    <script src="./shared/scripts.js"></script>
 </body>
 </html>
