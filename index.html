@@ -16,18 +16,17 @@
     <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
 
-    <link type="text/css" rel="stylesheet" href="./shared/styles.css">
+    <link type="text/css" rel="stylesheet" href="/public-3d-viewers/shared/styles.css">
 </head>
 <body>
         <model-viewer 
             alt="A 3D model" 
             max-camera-orbit="auto 90deg auto"  
             bounds="tight" 
-            src="./shared/sample.glb" 
-            ios-src="./models/sample.usdz" 
+            src="/public-3d-viewers/shared/sample.glb" 
+            ios-src="/public-3d-viewers/models/sample.usdz" 
             ar ar-modes="scene-viewer quick-look webxr" 
-            camera-controls environment-image="./shared/envs/sample.hdr" 
-            poster="sample.webp" 
+            camera-controls environment-image="/public-3d-viewers/shared/envs/sample.hdr" 
             shadow-intensity="1">
 
         <div class="progress-bar hide" slot="progress-bar">
@@ -37,9 +36,9 @@
             View in your space
         </button>
         <div id="ar-prompt">
-            <img src="./shared/images/ar_hand_prompt.png">
+            <img src="/public-3d-viewers/shared/images/ar_hand_prompt.png">
         </div>
     </model-viewer>
-    <script src="./shared/scripts.js"></script>
+    <script src="/public-3d-viewers/shared/scripts.js"></script>
 </body>
 </html>
